@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../common/reset.css">
+		<script src="../common/jquery-3.3.1.min.js"></script>
+		<style>
+			header { width:100%; height:250px; text-align:center; line-height:200px; font-weight:bold; font-size:30px; }
+			main .img { width:300px; height:360px;margin:20px 200px 20px 250px ; background:#efefef; float:left;}
+			main img {  }
+			h1 { font-weight:bold; line-height:3; font-size: 18px;}
+			p { line-height:2; }
+			main .txt { float:left; }
+			main .profile { float:left; }
+			main .career { float:left; margin-left:100px; }
+			main .award { margin-top: 30px; }
+			h1 { text-transform:capitalize; }	
+		#i1 {background:skyblue;  width:200px; height:10px; width:5px; }	
+		#i2 {background:orange; ;width:5px; height:10px;}	
+		#i3 {background:salmon;width:5px; height:10px;}
+		#i4 {background:tomato;width:5px; height:10px;}
+		/* 사이드바 */
+		nav { position:absolute;top:0; left:0; height:100% }
+		.open, .close { width:40px; height:40px; text-indent:-999%; background:url(../images/list.png) no-repeat; position:absolute; top:10px;  background-size:cover;}
+		.open { left:20px; }
+		.navG {position:relative; width:240px; height:100%; background:#eee; overflow:hidden;left:-240px;}
+		.navG .close { right:10px; }
+		.navG #gnb { margin:150px 20px; line-height:3; text-align:center; width:50px; }
+		.navG #gnb a {color:#000;  font-size:18px;}
+		.navG #gnb a:hover {color:#8585ad; }
+        
+		</style>
+	</head>
+	<body>
+		<!-- 프로필 -->
+		<header>
+			<div id="about">ABOUT ME</div>
+		</header>
+
+		<main>
+			<div class="img"><img src="" alt="img" width="300" height="360">img</div>
+			<div class="txt">
+				<div class="profile">
+					<h1>profile</h1>
+					<p>Name_온누리</p>
+					<p>Date of birth_1992.06.12</p>
+					<p>Mobile_010-2076-4607</p>
+					<p>E-mail_lemonade302@naver.com</p>
+				</div>
+				<div class="career">
+					<h1>careeer</h1>
+					<p>더조은컴퓨터아트학원 수료</p>
+					<div class="award">
+					<h1>award</h1>
+					<p>컴퓨터활용능력 2급</p>
+					</div>
+				</div>
+				<div class="skill">
+					<h1>skill</h1>
+					<p>Photoshop (80%)</p><div class="box" id="i1"></div>
+					<p>Illustration (70%)</p><div class="box" id="i2"></div>
+					<p>HTML/CSS (60%)</p>	<div class="box" id="i3"></div>
+					<p>Javascript / jQuery (50%)</p><div class="box" id="i4"></div>
+				</div>
+		</div>
+		</main>
+		<!--사이드바-->
+			<nav>
+				<div class="open">open</div>
+				<div class="navG">
+					<div class="close">close</div>
+					<ul id="gnb">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="promotion.html">Promotion</a></li>
+					</ul>
+				</div>
+			</nav>
+	<script>
+	$(function(){
+	$("main").mouseenter(function(){
+		$("#i1").animate({ width:400 },1000);
+	});
+
+	$("main").mouseenter(function(){
+		$("#i2").animate({ width:350 },1000);
+	});
+
+	$("main").mouseenter(function(){
+		$("#i3").animate({ width:260 },1000);
+	});
+
+	$("main").mouseenter(function(){
+		$("#i4").animate({ width:200 },1000);
+	});
+});	
+	//내비게이션
+	$(".open").click(function(){
+		$(".navG").animate({left:0});
+	})	
+	$(".close").click(function(){
+		$(".navG").animate({left:-240});
+	})	
+
+
+	</script>
+	</body>
+</html>				
