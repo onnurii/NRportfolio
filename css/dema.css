@@ -140,14 +140,14 @@ footer h1 a { color:#8c8c8c  }
 	  #wrap .one #i2 img:hover { transform:scale(1); opacity:1; }
 	
   	/* two */
-  		#wrap .two { width:300%; height:500px;margin-top:400px; }
+  		#wrap .two { width:100%; height:500px;margin-top:400px;  }
   		.two #m1 { display:none;  }
   		.two #m2 { display:none;  }
-  		.two #m3 { clear:left; height:500px;  }
-  		#wrap .two #m3 h1 { margin-top:200px; font-size:22px;  }
+  		.two #m3 {clear:left; height:500px;  }
+  		#wrap .two #m3 h1 { margin-top:200px; font-size:22px; text-align:center; }
   		#wrap .two #m3 p {  font-size:20px;  }
   		#wrap .two #m3 h2 a{ font-size:20px; }
-  		#wrap .two #m3 { background:; height:100px;margin-top:150px; }
+  		#wrap .two #m3 { background:none; height:100px;margin-top:150px; width:100% }
 		
 
 
@@ -173,11 +173,11 @@ footer h1 a { color:#8c8c8c  }
 		#wrap .three .f3 {overflow:visible;  height:100%}   
 		#wrap .three .f3 img{width:200%; height:auto;}  
 		#wrap .three .f0 img{width:200%; height:auto;}  
-		#wrap .three .f4 { width:100%; height:151px; margin-top:-321px; } 
-		#wrap .three .f5 { width:100%; height:150px; } 
+		#wrap .three .f4 { width:100%; height:151px; margin-top:-340px} 
+		#wrap .three .f5 { width:100%; height:150px; margin-top:-27px; } 
 		#wrap .three .f6 {display:none;}  
 		#wrap .three .f6 img{display:none;}  
-		#wrap .three .f7 img{width:200%; height:auto; overflow:visible;}  
+		#wrap .three .f7 img{width:200%; height:auto; overflow:visible; margin-top:-20px}  
 		
 		.three .f6 { width:200%; clear:left;} 
 
@@ -198,12 +198,12 @@ footer h1 a { color:#8c8c8c  }
 		#wrap .four #p2 h1:nth-child(2) { margin-top:20px; font-size:18px; }
 		#wrap .four #p2 h1:nth-child(1) { margin-top:110px; font-size:24px;}
 		
-		#wrap .four #p3 {margin-top:-70px; width:100%; background-size:100%;float:left; background-position:50% 50%; }
+		#wrap .four #p3 {margin-top:-80px; width:100%; background-size:100%;float:left; background-position:50% 50%; }
   	
   	/* footer */
-  		footer { background:#151515; position:relative; margin-top:-70px;}
+  		footer { background:#151515; position:relative; margin-top:-70px; height:130px;}
  		footer img { display:none; }
-		footer h1 { position:absolute; bottom:30px; left:-20px; color:#878787;}
-
+		footer h1 { position:absolute; bottom:20px; left:-20px; color:#878787;}
+		footer h2 { margin-left:0; text-indent:-999%; }
 
   }
