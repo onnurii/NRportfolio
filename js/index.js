@@ -14,6 +14,12 @@ $('.two').ready(function(){
 		$('.two').css({'opacity':'1','marginRight':'0'});
 		});
 
+$('#nav3').mouseover(function(){
+		$('.one').css({'background':'url(images/88.png)','background-size':'cover'})
+	})
+	$('#nav3').mouseleave(function(){
+		$('.one').css({'background':'url(images/55.png)','background-size':'cover', 'background-position':'50% 50%'})
+	})
 
 
     
